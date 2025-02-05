@@ -3,7 +3,10 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 
 export const metadata: Metadata = {
-  title: 'Dev Store',
+  title: {
+    template: '%s | Dev Store',
+    default: 'Dev Store',
+  },
 };
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
